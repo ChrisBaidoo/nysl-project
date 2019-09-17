@@ -26,23 +26,21 @@
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
   color: #ffffff;
   display: block;
+  font-family: verdana;
 }
 
 .title {
   font-family: verdana;
   text-align: center;
-  z-index: 1;
-  background-color: #e7c797;
+  z-index: 0;
+  background-color: #436894;
   top: 0;
   padding-top: 50px;
   padding: 6px 8px 6px 16px;
   border-radius: 6px;
-  position: relative;
-  top: 18px;
-  /* left: 10px; */
 }
 
 h1,
@@ -54,14 +52,16 @@ img {
   width: 100%;
 }
 
+.header h1 {
+  position: relative;
+  top: 18px;
+  bottom: 18px;
+  /* left: 10px; */
+  z-index: -1;
+}
+
 .header img {
   float: right;
   width: 100px;
   height: 100px;
-}
-
-.header h1 {
-  /* position: relative;
-  top: 18px;
-  left: 10px; */
 }
