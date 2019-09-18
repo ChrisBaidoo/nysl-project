@@ -37,10 +37,11 @@
   text-align: center;
   z-index: 0;
   background-color: #436894;
-  top: 0;
   padding-top: 50px;
   padding: 6px 8px 6px 16px;
   border-radius: 6px;
+  color: #ffffff;
+  margin-bottom: 40px;
 }
 
 h1,
@@ -65,3 +66,17 @@ img {
   width: 100px;
   height: 100px;
 }
+
+.container-image {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+a:hover {
+  background-color: red;
+}
+
+/* a:visited {
+  background-color: yellow;
+} */
