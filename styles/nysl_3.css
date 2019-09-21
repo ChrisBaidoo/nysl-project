@@ -44,8 +44,8 @@
   margin-bottom: 40px;
 }
 
-.banner{
-  height: 176px; 
+.banner {
+  height: 176px;
   overflow: hidden;
 }
 
@@ -54,7 +54,7 @@ h2 {
   font-family: verdana;
 }
 
-h2{
+h2 {
   margin: 10px 0;
 }
 
@@ -82,8 +82,10 @@ img {
   height: 100px;
 }
 
-.body-text{
- margin-top: 70px;
+.body-text {
+  margin-top: 70px;
+  /* display: flex;
+  justify-content: space-bween; */
 }
 
 .body-image img {
@@ -95,7 +97,7 @@ img {
 }
 
 
-.sidenav a:hover{
+.sidenav a:hover {
   background-color: red;
 }
 
@@ -104,18 +106,44 @@ img {
   font-size: 30px;
 }
 
-.hidden{
+.hidden {
   visibility: hidden;
+}
+
+th {
+  text-decoration: underline;
+  width: 30%;
+  text-align: center;
+}
+
+td {
+  border-width: 0;
+  width: 25%;
+  text-align: center;
+}
+
+
+
+
+.table-content {
+  border: 1px solid grey;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 0px 2px 2px 0px rgba(158, 150, 158, 1);
+  background-color: lightgoldenrodyellow;
+  margin-bottom: 20px;
+  font-family: verdana;
+  font-size: small;
 }
 
 
 
 @media only screen and (max-width: 1200px) {
-  .main-container{
+  .main-container {
     width: 800px;
   }
 
   @media only screen and (max-width: 700px) {
-    .main-container{
+    .main-container {
       width: 1000px;
     }
