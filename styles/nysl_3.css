@@ -1,0 +1,121 @@
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.section-left {
+  margin-right: 40px;
+}
+
+.side-nav-wrapper {
+  width: 230px;
+}
+
+.sidenav {
+  width: 230px;
+  position: fixed;
+  z-index: 1;
+  top: 80px;
+  border-radius: 6px;
+  background-color: #436894;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  font-family: verdana;
+}
+
+.title {
+  font-family: verdana;
+  text-align: center;
+  z-index: 0;
+  background-color: #436894;
+  padding-top: 50px;
+  padding: 6px 8px 6px 16px;
+  border-radius: 6px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.banner{
+  height: 176px; 
+  overflow: hidden;
+}
+
+h1,
+h2 {
+  font-family: verdana;
+}
+
+h2{
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 11px;
+}
+
+/* .header{
+  position: relative;
+  z-index: 10;
+} */
+
+.header h1 {
+  position: relative;
+  top: 18px;
+  bottom: 18px;
+  z-index: -1;
+}
+
+.header img {
+  float: right;
+  width: 100px;
+  height: 100px;
+}
+
+.body-text{
+ margin-top: 70px;
+}
+
+.body-image img {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 30%;
+  border-radius: 6px;
+}
+
+
+.sidenav a:hover{
+  background-color: red;
+}
+
+.current {
+  background-color: greenyellow;
+  font-size: 30px;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+  .main-container{
+    width: 800px;
+  }
+
+  @media only screen and (max-width: 700px) {
+    .main-container{
+      width: 1000px;
+    }
