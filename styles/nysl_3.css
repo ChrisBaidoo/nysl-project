@@ -1,5 +1,5 @@
 .main-container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
 }
@@ -16,7 +16,7 @@
   width: 230px;
   position: fixed;
   z-index: 1;
-  top: 30px;
+  top: 80px;
   border-radius: 6px;
   background-color: #436894;
   padding-top: 30px;
@@ -44,20 +44,35 @@
   margin-bottom: 40px;
 }
 
+.banner{
+  height: 176px; 
+  overflow: hidden;
+}
+
 h1,
 h2 {
   font-family: verdana;
 }
 
+h2{
+  margin: 10px 0;
+}
+
 img {
   width: 100%;
+  object-fit: cover;
+  border-radius: 11px;
 }
+
+/* .header{
+  position: relative;
+  z-index: 10;
+} */
 
 .header h1 {
   position: relative;
   top: 18px;
   bottom: 18px;
-  /* left: 10px; */
   z-index: -1;
 }
 
@@ -67,16 +82,40 @@ img {
   height: 100px;
 }
 
-.container-image {
-  position: relative;
-  text-align: center;
-  color: white;
+.body-text{
+ margin-top: 70px;
 }
 
-a:hover {
+.body-image img {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 30%;
+  border-radius: 6px;
+}
+
+
+.sidenav a:hover{
   background-color: red;
 }
 
-/* a:visited {
-  background-color: yellow;
-} */
+.current {
+  background-color: greenyellow;
+  font-size: 30px;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+  .main-container{
+    width: 800px;
+  }
+
+  @media only screen and (max-width: 700px) {
+    .main-container{
+      width: 1000px;
+    }
