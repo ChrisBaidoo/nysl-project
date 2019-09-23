@@ -170,6 +170,22 @@ iframe {
   width: 100%;
 }
 
+.table-content td {
+  /* border-bottom: 2px solid red; */
+
+}
+
+iframe {
+  height: 200px;
+  width: 200px;
+}
+
+.address {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
 
 
 @media only screen and (max-width: 1200px) {
