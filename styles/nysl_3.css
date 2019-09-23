@@ -47,6 +47,7 @@
 .banner {
   height: 176px;
   overflow: hidden;
+  width: 100%
 }
 
 h1,
@@ -82,6 +83,10 @@ img {
   height: 100px;
 }
 
+td:last-child {
+  margin-bottom: 30px;
+}
+
 .body-text {
   margin-top: 70px;
   /* display: flex;
@@ -110,19 +115,24 @@ img {
   visibility: hidden;
 }
 
+.games-info,
+.games-location {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
 th {
-  text-decoration: underline;
   width: 30%;
   text-align: center;
+  border-bottom: 1px solid black;
 }
 
 td {
   border-width: 0;
   width: 25%;
   text-align: center;
+  position: relative;
 }
-
-
 
 
 .table-content {
@@ -131,9 +141,12 @@ td {
   padding: 20px;
   box-shadow: 0px 2px 2px 0px rgba(158, 150, 158, 1);
   background-color: lightgoldenrodyellow;
-  margin-bottom: 20px;
   font-family: verdana;
   font-size: small;
+  margin: 0 auto;
+
+
+
 }
 
 .table-content td {
@@ -144,6 +157,11 @@ td {
 iframe {
   height: 200px;
   width: 200px;
+  left: 100px;
+}
+
+.maps {
+  width: 100px;
 }
 
 .address {
