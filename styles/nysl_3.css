@@ -93,6 +93,23 @@ td:last-child {
   justify-content: space-bween; */
 }
 
+input[type="text"],
+[type="date"],
+[type="tel"],
+[type="email"] {
+  width: 10em;
+  border-radius: 6px;
+  margin-right: 6em;
+  width: 20%;
+  padding: 5px;
+  margin-left: 0.5em;
+
+}
+
+label {
+  /* font-size: 15px; */
+}
+
 .body-image img {
   float: left;
   margin-right: 30px;
@@ -160,9 +177,9 @@ iframe {
   left: 100px;
 }
 
-.maps {
+/* .maps {
   width: 100px;
-}
+} */
 
 .address {
   display: flex;
