@@ -36,28 +36,48 @@
 
       <div class="body-text table-content">
 
-        <form id="questions" method="post" action="">
-          <div>
-            <label for="personal-details">Player’s First Name:<input type="text" name="first name" required=""></label>
-            <label for="personal-details">Last Name:<input type="text" name="last name" required=""></label>
+        <form id="questions" method="GET" action="./show_data.html">
+
+          <div class="personal-details-wrapper">
+
+            <label for="personal-details">Player’s First Name:</label>
+            <input type="text" name="first name" required="">
+            <label for="personal-details">Last Name:</label>
+            <input type="text" name="last name" required="">
+            <!-- <label for="personal-details">Last Name:</label>
+            <input type="text" name="last name" required=""> -->
+
+          </div>
+          <div class="personal-details-wrapper">
+            <!-- <label for="personal-details">Player’s First Name:<input type="text" name="first name" required=""></label>
+            <label for="personal-details">Last Name:<input type="text" name="last name" required=""></label> -->
+            <label for="personal-details">Street Address:</label>
+            <input type="text" name="address">
+            <!-- <label for="personal-details">Street Address:</label>
+            <input type="text" name="address"> -->
+            <label for="personal-details">City:</label>
+            <input type="text" name="city">
           </div>
 
-          <br><br>
+          <!-- <br><br> -->
 
-          <div>
+          <!-- <div>
             <label for="personal-details">Street Address:<input type="text" name="address"></label>
+          </div> -->
+
+          <!-- <br><br> -->
+
+          <div class="personal-details-zip-code-wrapper">
+            <!-- <label for="personal-details">City:<input type="text" name="city"></label> -->
+            <label for="personal-details">Zip Code:</label>
+            <input type="text" name="zip code" class="zip-code">
           </div>
+
 
           <br><br>
 
-          <div>
-            <label for="personal-details">City:<input type="text" name="city"></label>
-            <label for="personal-details">Zip Code:<input type="text" name="zip code"></label>
-          </div>
+          <div class="personal-details-wrapper">
 
-          <br><br>
-
-          <div>
             <label for="personal-details">Birth Date (dd/mm/yyyy):<input type="date" name="birth date"></label>
 
           </div>
@@ -90,22 +110,41 @@
 
           <br><br>
 
-          <div>
-            <label for="personal-details">Parent/Guardian:<input type="text" name="parent"></label>
-          </div>
-
           <br><br>
 
-          <div>
-            <label for="personal-details">Contact Phone:<input type="tel" name="phone"></label>
-            <label for="personal-details">Contact Email:<input type="email" name="email"></label>
+          <!-- <div class="personal-details-wrapper">
 
+            <label for="personal-details">Player’s First Name:</label>
+            <input type="text" name="first name" required="">
+            <label for="personal-details">Last Name:</label>
+            <input type="text" name="last name" required="">
+            <label for="personal-details">Last Name:</label>
+              <input type="text" name="last name" required="">
+
+          </div> -->
+
+
+          <div class="personal-details-wrapper">
+            <label for="personal-details">Parent/Guardian:</label>
+            <input type="text" name="parent-or-guardian-name">
+            <label for="personal-details">Contact Phone:</label>
+            <input type="tel" name="phone">
           </div>
 
-          <br><br>
+          <div class="personal-details-wrapper">
+            <label for="personal-details">Contact Email:</label>
+            <input type="email" name="email">
+          </div>
 
-          <div>
+
+          <div class="school">
             <label for="elementary-school">Which elementary schools do you live near?</label>
+          </div>
+
+          <br>
+          <br>
+
+          <div class="personal-details-wrapper">
             <label for="elementary-school">First Closest School</label>
             <select name="first-elementary-school" id="elementary-school">
               <option value="AJ Katzenmaier">AJ Katzenmaier</option>
@@ -115,12 +154,8 @@
               <option value="North Elementary">North Elementary</option>
               <option value=" South Elementary">South Elementary</option>
             </select>
-          </div>
-
-          <div>
             <label for="elementary-school">Second Closest School</label>
             <select name="second-elementary-school" id="elementary-school">
-              <!-- <option value="" input aria-placeholder="Placeholder text here"></option> -->
               <option value="AJ Katzenmaier">AJ Katzenmaier</option>
               <option value="Greenbay">Greenbay</option>
               <option value="Howard A Yeager">Howard A Yeager</option>
@@ -128,36 +163,41 @@
               <option value="North Elementary">North Elementary</option>
               <option value=" South Elementary">South Elementary</option>
             </select>
+
+
           </div>
 
-
-
-          <!-- <div class="secondselect">
-              <p><strong>Second Closest School:</strong></p>
-              <select name="secondschool">
-                <option value="" selected="" disabled="">Please select a school</option>
-                <option value="AJ Katzenmaier">AJ Katzenmaier</option>
-                <option value="Greenbay">Greenbay</option>
-                <option value="Howard A Yeager">Howard A Yeager</option>
-                <option value="Marjorie P Hart">Marjorie P Hart</option>
-                <option value="North Elementary">North Elementary</option>
-                <option value=" South Elementary">South Elementary</option>
-              </select>
-            </div>
-          </div> -->
-
           <br>
           <br>
 
+          <div>
+            <fieldset>
+              <legend>What position(s) do you normally play? (check all that apply)</legend>
+              <label for="personal-details"><input type="checkbox" name="position-you-normally-play"
+                  value="Forward">Forward</label>
+              <label for="personal-details"><input type="checkbox" name="position-you-normally-play"
+                  value="Midfield">Midfield</label>
+              <label for="personal-details"><input type="checkbox" name="position-you-normally-play"
+                  value="Defense">Defense</label>
+              <label for="personal-details"><input type="checkbox" name="position-you-normally-play"
+                  value="Goalkeeper">Goalkeeper</label>
+            </fieldset>
+          </div>
+
+          <br>
+          <br>
 
           <div>
             <fieldset>
               <legend>What position(s) do you want to play? (check all that apply)</legend>
-              <label for="personal-details"><input type="checkbox" name="position" value="position">Forward</label>
-              <label for="personal-details"><input type="checkbox" name="position" value="position">Midfield</label>
-              <label for="personal-details"><input type="checkbox" name="position" value="position">Defense</label>
-              <label for="personal-details"><input type="checkbox" name="position" value="position">Goalkeeper</label>
-              <!-- <label for="personal-details"><input type="checkbox" name="position" value="position">5<sup>th</sup></label> -->
+              <label for="personal-details"><input type="checkbox" name="position-you-want-to-play"
+                  value="Forward">Forward</label>
+              <label for="personal-details"><input type="checkbox" name="position-you-want-to-play"
+                  value="Midfield">Midfield</label>
+              <label for="personal-details"><input type="checkbox" name="position-you-want-to-play"
+                  value="Defense">Defense</label>
+              <label for="personal-details"><input type="checkbox" name="position-you-want-to-play"
+                  value="Goalkeeper">Goalkeeper</label>
             </fieldset>
           </div>
 
@@ -230,20 +270,21 @@
             that I have read the cancellation policy and agree to its terms.
           </p>
 
+          <br>
 
 
-          <div>
-            <label for="personal-details">Parent/Guardian Signature:<input type="text" name="date"></label>
+          <div class="personal-details-wrapper">
+            <label for="personal-details">Parent/Guardian Signature:</label>
+            <input type="text" name="parent-guardian-signature">
 
-            <label for="personal-details">Date(dd/mm/yyyy):<input type="date" name="date"></label>
+            <label for="personal-details">Date(dd/mm/yyyy):</label>
+            <input type="text" name="date">
           </div>
 
-          <div class>
+
+          <div class="submit">
             <input type="submit" value="submit">
           </div>
-
-
-
 
 
       </div>
