@@ -191,11 +191,11 @@ input[type="email"] {
 
 
 .sidenav a:hover {
-  background-color: red;
+  background-color: greenyellow;
 }
 
 .current {
-  background-color: greenyellow;
+  background-color: #033949;
   font-size: 30px;
 }
 
