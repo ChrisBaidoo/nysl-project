@@ -47,7 +47,7 @@
 .banner {
   height: 176px;
   overflow: hidden;
-  width: 100%
+  width: 100%;
 }
 
 h1,
@@ -69,7 +69,6 @@ img {
   border-radius: 11px;
 }
 
-
 .header h1 {
   position: relative;
   top: 18px;
@@ -87,11 +86,9 @@ td:last-child {
   margin-bottom: 30px;
 }
 
-
 input[type="checkbox"] {
   margin-right: 5px;
 }
-
 
 .school {
   font-weight: bold;
@@ -119,11 +116,7 @@ legend {
   display: flex;
 }
 
-
-
 .personal-details-wrapper label {
-  /* justify-content: center; */
-  /* padding-right: 30px; */
   padding-bottom: 5px;
   display: block;
 }
@@ -156,8 +149,6 @@ input[type="email"] {
   margin-left: 5px;
 }
 
-
-
 .submit input[type="submit"] {
   -webkit-appearance: none;
   position: relative;
@@ -169,10 +160,9 @@ input[type="email"] {
   border-radius: 6px;
 }
 
-.body-text img{
+.body-text img {
   margin-bottom: 60px;
 }
-
 
 .body-image img {
   margin-right: 30px;
@@ -181,14 +171,11 @@ input[type="email"] {
   border-radius: 6px;
   float: left;
   object-fit: contain;
-
-
 }
 
 .body-image p {
   flex: 1 1 auto;
 }
-
 
 .sidenav a:hover {
   background-color: greenyellow;
@@ -222,47 +209,39 @@ td {
   position: relative;
 }
 
-
 .table-content {
   border: 1px solid grey;
   border-radius: 6px;
   padding: 20px;
   box-shadow: 0px 2px 2px 0px rgba(158, 150, 158, 1);
-  background: radial-gradient(circle, rgba(133, 195, 237, 1) 0%, rgba(231, 255, 254, 1) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(133, 195, 237, 1) 0%,
+    rgba(231, 255, 254, 1) 100%
+  );
   font-family: verdana;
   font-size: small;
   margin: 0 auto;
   overflow: auto;
 }
 
-
-
-
 iframe {
   height: 200px;
   width: 200px;
   border-radius: 6px;
-  /* left: 100px; */
 }
 
-
 .address {
-  /* margin: auto; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-bottom: 20px;
-/* 
-  display: flex;
-  flex-direction: row;
-  width: 100%; */
 }
 
 .address-line {
   width: 200px;
   height: 200px;
 }
-
 
 iframe {
   height: 200px;
@@ -293,17 +272,16 @@ iframe {
 
 .circle {
   list-style-type: circle;
-
 }
-
-
 
 @media only screen and (max-width: 1200px) {
   .main-container {
     width: 800px;
   }
+}
 
-  @media only screen and (max-width: 700px) {
-    .main-container {
-      width: 1000px;
-    }
+@media only screen and (max-width: 700px) {
+  .main-container {
+    width: 1000px;
+  }
+}
