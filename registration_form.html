@@ -34,138 +34,232 @@
         <h1 class="title">Registration Form</h1>
       </div>
 
-      <div class="body-text table-content">
-        <!-- <div class="body-image">
-          <img src="images/soccer_image1.jpeg" />
-        </div> -->
+      <div class="table-content">
 
-        <div class="regformstyle">
-          <form method="get" action="show_data.html">
-            <div class="halfwide">Player’s First Name:<input type="text" name="first name" required="">
-              Last Name:<input type="text" name="last name" required=""></div><br><br>
-            <div class="fullwide">Street Address: <input type="text" name="adress"></div><br><br>
-            <div class="halfwide">City:<input type="text" name="city">
-              Zip Code:<input type="text" name="zip code"></div><br><br>
-            Birth Date (dd/mm/yyyy):<input class="bdate" type="date" name="birth date">
-            Gender:<input type="radio" name="gender" value="Female">Female
-            <input type="radio" name="gender" value="Male">Male<br><br>
+        <form id="questions" method="GET" action="./show_data.html">
 
-            Grade: <input class="rank" type="radio" name="grade" value="Preschool">Pre-School
-            <input class="rank" type="radio" name="grade" value="second"> 2<sup>nd</sup>
-            <input class="rank" type="radio" name="grade" value="third"> 3<sup>rd</sup>
-            <input class="rank" type="radio" name="grade" value="fourth"> 4<sup>th</sup>
-            <input class="rank" type="radio" name="grade" value="fifth"> <sup>5th</sup> <br><br>
-            <div class="fullwide"> Parent/Guardian: <input type="text" name="parent"></div><br><br>
-            <div class="halfwide">Contact Phone:<input type="tel" name="phone">Contact Email:<input type="email"
-                name="email"></div>
-            <p><strong>Which elementary schools do you live near?</strong></p>
+          <div class="personal-details-wrapper">
 
-            <div class="selectstyle">
-              <div class="firstselect">
-                <p><strong>First Closest School:</strong></p>
-                <select name="firstschool">
-                  <option value="" selected="" disabled="">Please select a school</option>
-                  <option value="AJ Katzenmaier">AJ Katzenmaier</option>
-                  <option value="Greenbay">Greenbay</option>
-                  <option value="Howard A Yeager">Howard A Yeager</option>
-                  <option value="Marjorie P Hart">Marjorie P Hart</option>
-                  <option value="North Elementary">North Elementary</option>
-                  <option value=" South Elementary">South Elementary</option>
-                </select>
-              </div>
-              <div class="secondselect">
-                <p><strong>Second Closest School:</strong></p>
-                <select name="secondschool">
-                  <option value="" selected="" disabled="">Please select a school</option>
-                  <option value="AJ Katzenmaier">AJ Katzenmaier</option>
-                  <option value="Greenbay">Greenbay</option>
-                  <option value="Howard A Yeager">Howard A Yeager</option>
-                  <option value="Marjorie P Hart">Marjorie P Hart</option>
-                  <option value="North Elementary">North Elementary</option>
-                  <option value=" South Elementary">South Elementary</option>
-                </select>
-              </div>
-            </div>
+            <label for="personal-details">Player’s First Name:</label>
+            <input type="text" name="first name" required="">
+            <label for="personal-details">Last Name:</label>
+            <input type="text" name="last name" required="">
+          </div>
 
-            <p><strong>What position(s) do you want to play?</strong> (check all that apply)</p>
-            <table>
-              <tbody>
-                <tr>
-                  <td><input type="checkbox">Forward</td>
-                  <td><input type="checkbox">Midfield</td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox">Defense</td>
-                  <td><input type="checkbox">Goalkeeper</td>
-                </tr>
-              </tbody>
-            </table>
-            <p><input type="checkbox"><strong>Already Have a Uniform</strong></p>
+          <div class="personal-details-wrapper">
+            <label for="personal-details">Street Address:</label>
+            <input type="text" name="address">
+            <label for="personal-details">City:</label>
+            <input type="text" name="city">
+          </div>
 
-            <table class="tablestyle">
-              <tbody>
-                <tr>
-                  <th><strong>Jersey Size:</strong></th>
-                  <th></th>
-                  <th><strong>Shorts Size:</strong></th>
-                  <th></th>
-                </tr>
-                <tr>
-                  <td><input type="radio" name="Jersey size" value="Youth Small">Youth Small</td>
-                  <td><input type="radio" name="Jersey size" value="Medium">Medium</td>
-                  <td><input type="radio" name="Shorts size" value="Youth Small">Youth Small</td>
-                  <td><input type="radio" name="Shorts size" value="Medium">Medium</td>
-                </tr>
-                <tr>
-                  <td><input type="radio" name="Jersey size" value="Youth Medium">Youth Medium</td>
-                  <td><input type="radio" name="Jersey size" value="Large">Large</td>
-                  <td><input type="radio" name="Shorts size" value="Youth Medium">Youth Medium</td>
-                  <td><input type="radio" name="Shorts size" value="Large">Large</td>
-                </tr>
-                <tr>
-                  <td><input type="radio" name="Jersey size" value="Youth Large">Youth Large</td>
-                  <td><input type="radio" name="Jersey size" value="Extra-Large">Extra-Large</td>
-                  <td><input type="radio" name="Shorts size" value="Youth Large">Youth Large</td>
-                  <td><input type="radio" name="Shorts size" value="Extra-Large">Extra-Large</td>
-                </tr>
-                <tr>
-                  <td><input type="radio" name="Jersey size" value="Small">Small</td>
-                  <td></td>
-                  <td><input type="radio" name="Shorts size" value="Small">Small</td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-            <p id="permission"><strong>Permission to Play</strong></p>
-            <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the
-              rules of the Northside Youth
-              Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in
-              consideration for the “League”
-              accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or
-              otherwise indemnify NYSL, their
-              employees and associated personnel and volunteers, including the facilities used for practices and games,
-              against any claim by or
-              on behalf of the registrant as a result of the registrant’s participation in the program and/or being
-              transported to or from NYSL
-              sponsored activities, which transportation.
-            </p>
-            <p>By signing below, I hereby agree and authorize the above. In addition, By entering your name below, yOU
-              also acknowledge that YOU have read the
-              cancellation policy and agree to its terms.
-            </p>
+          <div class="personal-details-zip-code-wrapper">
+            <label for="personal-details">Zip Code:</label>
+            <input type="text" name="zip code" class="zip-code">
+          </div>
 
 
-            <footer>
-              <div class="halfwide">Parent/Guardian Signature:<input type="text" name="signature">
-                Date:<input type="date" name="date"></div>
-              <div class="subfooter">
+          <br><br>
 
-                <input type="submit" value="submit">
-              </div>
+          <div class="personal-details-wrapper">
 
-            </footer>
-          </form>
-        </div>
+            <label for="personal-details">Birth Date (dd/mm/yyyy):<input type="date" name="birth date"></label>
+
+          </div>
+
+          <br><br>
+
+          <div>
+
+            <fieldset>
+              <legend>Gender</legend>
+              <label for="personal-details"><input type="radio" name="sex" value="male">Male</label>
+              <label for="personal-details"><input type="radio" name="sex" value="female">Female</label>
+
+            </fieldset>
+
+          </div>
+
+          <br><br>
+
+          <div>
+            <fieldset>
+              <legend>Grade</legend>
+              <label for="personal-details"><input type="radio" name="grade" value="pre-school">Pre-School</label>
+              <label for="personal-details"><input type="radio" name="grade" value="second">2<sup>nd</sup></label>
+              <label for="personal-details"><input type="radio" name="grade" value="third">3<sup>rd</sup></label>
+              <label for="personal-details"><input type="radio" name="grade" value="fourth">4<sup>th</sup></label>
+              <label for="personal-details"><input type="radio" name="grade" value="fifth">5<sup>th</sup></label>
+            </fieldset>
+          </div>
+
+          <br><br>
+
+          <br><br>
+
+
+          <div class="personal-details-wrapper">
+            <label for="personal-details">Parent/Guardian:</label>
+            <input type="text" name="parent-or-guardian-name">
+            <label for="personal-details">Contact Phone:</label>
+            <input type="tel" name="phone">
+          </div>
+
+          <div class="personal-details-wrapper">
+            <label for="personal-details">Contact Email:</label>
+            <input type="email" name="email">
+          </div>
+
+
+          <div class="school">
+            <label for="elementary-school">Which elementary schools do you live near?</label>
+          </div>
+
+          <br>
+          <br>
+
+          <div class="personal-details-wrapper">
+            <label for="elementary-school">First Closest School</label>
+            <select name="first-elementary-school" id="elementary-school">
+              <option value="" selected="" disabled="">Please select a school</option>
+              <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+              <option value="Greenbay">Greenbay</option>
+              <option value="Howard A Yeager">Howard A Yeager</option>
+              <option value="Marjorie P Hart">Marjorie P Hart</option>
+              <option value="North Elementary">North Elementary</option>
+              <option value=" South Elementary">South Elementary</option>
+            </select>
+            <label for="elementary-school">Second Closest School</label>
+            <select name="second-elementary-school" id="elementary-school">
+              <option value="" selected="" disabled="">Please select a school</option>
+              <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+              <option value="Greenbay">Greenbay</option>
+              <option value="Howard A Yeager">Howard A Yeager</option>
+              <option value="Marjorie P Hart">Marjorie P Hart</option>
+              <option value="North Elementary">North Elementary</option>
+              <option value=" South Elementary">South Elementary</option>
+            </select>
+
+
+          </div>
+
+          <br>
+          <br>
+
+          <div>
+            <fieldset>
+              <legend>What position(s) do you normally play? (check all that apply)</legend>
+              <label for="personal-details"><input type="checkbox" name="position-you-normally-play"
+                  value="Forward">Forward</label>
+              <label for="personal-details"><input type="checkbox" name="position-you-normally-play"
+                  value="Midfield">Midfield</label>
+              <label for="personal-details"><input type="checkbox" name="position-you-normally-play"
+                  value="Defense">Defense</label>
+              <label for="personal-details"><input type="checkbox" name="position-you-normally-play"
+                  value="Goalkeeper">Goalkeeper</label>
+            </fieldset>
+          </div>
+
+          <br>
+          <br>
+
+          <div>
+            <fieldset>
+              <legend>What position(s) do you want to play? (check all that apply)</legend>
+              <label for="personal-details"><input type="checkbox" name="position-you-want-to-play"
+                  value="Forward">Forward</label>
+              <label for="personal-details"><input type="checkbox" name="position-you-want-to-play"
+                  value="Midfield">Midfield</label>
+              <label for="personal-details"><input type="checkbox" name="position-you-want-to-play"
+                  value="Defense">Defense</label>
+              <label for="personal-details"><input type="checkbox" name="position-you-want-to-play"
+                  value="Goalkeeper">Goalkeeper</label>
+            </fieldset>
+          </div>
+
+          <br>
+          <br>
+
+
+          <p><input type="checkbox"><strong>Already Have a Uniform</strong></p>
+
+          <br>
+          <br>
+
+          <div>
+            <fieldset>
+              <legend>Jersey Size:</legend>
+              <label for="personal-details"><input type="radio" name="jersey-size" value="Youth Small">Youth
+                Small</label>
+              <label for="personal-details"><input type="radio" name="jersey-size" value="Youth Medium">Youth
+                Medium</label>
+              <label for="personal-details"><input type="radio" name="jersey-size" value="Youth Large">Youth
+                Large</label>
+              <label for="personal-details"><input type="radio" name="jersey-size" value="Small">Small</label>
+              <label for="personal-details"><input type="radio" name="jersey-size" value="Medium">Medium</label>
+              <label for="personal-details"><input type="radio" name="jersey-size" value="Large">Large</label>
+              <label for="personal-details"><input type="radio" name="jersey-size"
+                  value="Extra-Large">Extra-Large</label>
+            </fieldset>
+          </div>
+
+          <br>
+          <br>
+
+          <div>
+            <fieldset>
+              <legend>Shorts Size:</legend>
+              <label for="personal-details"><input type="radio" name="shorts-size" value="Youth Small">Youth
+                Small</label>
+              <label for="personal-details"><input type="radio" name="shorts-size" value="Youth Medium">Youth
+                Medium</label>
+              <label for="personal-details"><input type="radio" name="shorts-size" value="Youth Large">Youth
+                Large</label>
+              <label for="personal-details"><input type="radio" name="shorts-size" value="Small">Small</label>
+              <label for="personal-details"><input type="radio" name="shorts-size" value="Medium">Medium</label>
+              <label for="personal-details"><input type="radio" name="shorts-size" value="Large">Large</label>
+              <label for="personal-details"><input type="radio" name="shorts-size"
+                  value="Extra-Large">Extra-Large</label>
+            </fieldset>
+          </div>
+
+          <br>
+          <br>
+
+
+          <p id="permission"><strong>Permission to Play</strong></p>
+          <p>
+            I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the
+            rules
+            of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury associated
+            with soccer and in consideration for the “League” accepting the registrant for its soccer programs
+            and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their employees and associated
+            personnel and volunteers, including the facilities used for practices and games, against any claim by or on
+            behalf of the registrant as a result of the registrant’s participation in the program and/or being
+            transported
+            to or from NYSL sponsored activities, which transportation.
+          </p>
+          <p>
+            By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge
+            that I have read the cancellation policy and agree to its terms.
+          </p>
+
+          <br>
+
+
+          <div class="personal-details-wrapper">
+            <label for="personal-details">Parent/Guardian Signature:</label>
+            <input type="text" name="parent-guardian-signature">
+
+            <label for="personal-details">Date(dd/mm/yyyy):</label>
+            <input type="text" name="date">
+          </div>
+
+
+          <div class="submit">
+            <input type="submit" value="submit">
+          </div>
+        </form>
       </div>
     </section>
   </div>

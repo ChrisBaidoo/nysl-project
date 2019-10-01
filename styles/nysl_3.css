@@ -47,10 +47,15 @@
 .banner {
   height: 176px;
   overflow: hidden;
+  width: 100%;
 }
 
 h1,
 h2 {
+  font-family: verdana;
+}
+
+p {
   font-family: verdana;
 }
 
@@ -63,11 +68,6 @@ img {
   object-fit: cover;
   border-radius: 11px;
 }
-
-/* .header{
-  position: relative;
-  z-index: 10;
-} */
 
 .header h1 {
   position: relative;
@@ -82,27 +82,107 @@ img {
   height: 100px;
 }
 
-.body-text {
-  margin-top: 70px;
-  /* display: flex;
-  justify-content: space-bween; */
+td:last-child {
+  margin-bottom: 30px;
 }
 
-.body-image img {
-  float: left;
-  margin-right: 30px;
-  margin-bottom: 30px;
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.school {
+  font-weight: bold;
+}
+
+select {
+  width: 10em;
+  border-radius: 6px;
+  margin-right: 6em;
+  width: 20%;
+  padding: 20px;
+  margin-left: 0.5em;
+}
+
+option {
+  padding: 10%;
+}
+
+legend {
+  padding: 5px;
+  font-weight: bold;
+}
+
+.personal-details-wrapper {
+  display: flex;
+}
+
+.personal-details-wrapper label {
+  padding-bottom: 5px;
+  display: block;
+}
+
+.personal-details-wrapper input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  display: block;
+  margin-bottom: 40px;
+  padding-right: 30px;
+  margin-right: 50px;
   width: 30%;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 10px;
+}
+
+.personal-details-zip-code-wrapper input[type="text"] {
+  width: 10%;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 10px;
+}
+
+.personal-details-wrapper input[type="date"] {
+  width: 30%;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+.submit input[type="submit"] {
+  -webkit-appearance: none;
+  position: relative;
+  left: 45%;
+  width: max-content;
+  height: 20%;
+  padding: 5px;
+  font-size: 15px;
   border-radius: 6px;
 }
 
+.body-text img {
+  margin-bottom: 60px;
+}
+
+.body-image img {
+  margin-right: 30px;
+  margin-bottom: 20px;
+  width: 30%;
+  border-radius: 6px;
+  float: left;
+  object-fit: contain;
+}
+
+.body-image p {
+  flex: 1 1 auto;
+}
 
 .sidenav a:hover {
-  background-color: red;
+  background-color: greenyellow;
 }
 
 .current {
-  background-color: greenyellow;
+  background-color: #033949;
   font-size: 30px;
 }
 
@@ -110,56 +190,105 @@ img {
   visibility: hidden;
 }
 
+.games-info,
+.games-location {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
 th {
-  text-decoration: underline;
   width: 30%;
   text-align: center;
+  border-bottom: 1px solid black;
 }
 
 td {
   border-width: 0;
   width: 25%;
   text-align: center;
+  position: relative;
 }
-
-
-
 
 .table-content {
   border: 1px solid grey;
   border-radius: 6px;
   padding: 20px;
   box-shadow: 0px 2px 2px 0px rgba(158, 150, 158, 1);
-  background-color: lightgoldenrodyellow;
-  margin-bottom: 20px;
+  background: radial-gradient(circle,
+      rgba(133, 195, 237, 1) 0%,
+      rgba(231, 255, 254, 1) 100%);
   font-family: verdana;
   font-size: small;
-}
-
-.table-content td {
-  /* border-bottom: 2px solid red; */
-
+  margin: 0 auto;
+  overflow: auto;
 }
 
 iframe {
-  height: 200px;
-  width: 200px;
+  height: 400px;
+  width: 400px;
+  border-radius: 6px;
 }
 
 .address {
   display: flex;
+  justify-content: space-evenly;
   flex-direction: row;
-  width: 100%;
 }
 
 
+
+
+
+.map {
+  justify-content: start;
+  flex-wrap: wrap;
+  margin-right: 10px;
+  order: 2
+}
+
+iframe {
+  height: 400px;
+  width: 400px;
+  border-radius: 6px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-indent {
+  text-indent: 40px;
+}
+
+.square {
+  list-style-type: square;
+}
+
+.alphabets {
+  list-style-type: lower-alpha;
+}
+
+.circle {
+  list-style-type: circle;
+}
+
+.bolden {
+  font-weight: bold;
+}
+
+footer {
+  width: 100%;
+  background-color: #033949;
+}
 
 @media only screen and (max-width: 1200px) {
   .main-container {
     width: 800px;
   }
+}
 
-  @media only screen and (max-width: 700px) {
-    .main-container {
-      width: 1000px;
-    }
+@media only screen and (max-width: 700px) {
+  .main-container {
+    width: 1000px;
+  }
+}
